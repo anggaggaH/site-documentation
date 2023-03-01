@@ -1,63 +1,82 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # Create a Sign
 
-1.  Add **Sign Type** object [here](https://api2.bdsamferdsel.no/sign_types/).
-2.  Add **Sub-Sign Type** object [here](https://api2.bdsamferdsel.no/sign_sub_types/).
+## Create Sign Type
+First thing that you should do is [create new sign type](https://api2.bdsamferdsel.no/sign_types/) if doesn't exist. Based documentation sign type is value in hundred between 100 s.d 900
+## Create Sub-Sign Type
+You can continue with [Create Sub-Sign Type](https://api2.bdsamferdsel.no/sign_sub_types/).
 
-    ```
+```
+{
+    "sign_type": 1,
+    "colors": *select base color*,
+    "font_sizes": *select list of supported font size*,
+    "type": "713",
+    "name": "713 Vanlig vegviser",
+    "svg_file": *uploaded later*,
+    "svg_string": *uploaded later*,
+    "svg_json": "713",
+}
+```
+
+*you can comeback to fill **svg_file** and **svg_string** when you successfully generated the sign*.
+For the **svg_json** you should follow predefined format, below is example for *701.1* sign:
+
+```
+[
     {
-        "sign_type": 1,
-        "colors": *select base color*,
-        "font_sizes": *select list of supported font size*,
-        "type": "713",
-        "name": "729 Gate-/vegnavnskilt",
-        "svg_file": *uploaded later*,
-        "svg_string": *uploaded later*,
-        "svg_json": "713",
-    }
-    ```
-
-    *you can comeback to fill **svg_file** and **svg_string** when you successfully generated the sign*.
-    For the **svg_json** you should follow predefined format:
-
-    ```
-    [
+        "id": 3,
+        "type": "rectangle",
+        "background": "trafikkgul",
+        "signSubTypeId": 5,
+        "elements": [
         {
-            "id": 1,
-            "type": "rectangle",
-            "background": "fluorescerende gul-grønn",
-            "signSubTypeId": 21,
-            "elements": [
-                {
-                    "type": "text",
-                    "componentName": "Text",
-                    "textContent": "Veien stengt mellom",
-                    "size": "175",
-                    "position": 0
-                },
-                {
-                    "type": "text",
-                    "componentName": "Text",
-                    "textContent": "Horten og Tønsberg",
-                    "size": "175",
-                    "position": 1
-                },
-                {
-                    "type": "text",
-                    "componentName": "Text",
-                    "textContent": "Statens vegvesen",
-                    "size": "105",
-                    "position": 2
-                }
-            ]
+            "type": "direction",
+            "componentName": "TriangleEdge",
+            "textContent": "",
+            "variant": "left",
+            "position": "middle"
+        },
+        {
+            "componentName": "RoadNumber",
+            "isDashed": false,
+            "position": "top",
+            "textContent": "E 0",
+            "type": "road-number",
+            "variant": "trafikkgrønn"
+        },
+        {
+            "type": "icon",
+            "componentName": 213,
+            "position": "top"
+        },
+        {
+            "type": "text",
+            "componentName": "Text",
+            "textContent": "H",
+            "variant": "",
+            "position": "top"
+        },
+        {
+            "type": "text",
+            "componentName": "Text",
+            "textContent": "H",
+            "variant": "",
+            "position": "bottom"
         }
-    ]
-    ```
+        ]
+    },
+]
+```
+- *type* is sign type.
+- *componentName* is file name written in CamelCase format that should be same with file name in the source code, but for icon, arrow and symbol it uses **id** of that element type.
+- *textContent* is text that will be displayed on that element type.
+- *variant* used like theme in road-number element type.
 
-3.  Add **Sub-Sign Type** object [here](https://api2.bdsamferdsel.no/sign_sub_types/).
+## Add **Sub-Sign Type** object [here](https://api2.bdsamferdsel.no/sign_sub_types/).
 
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
