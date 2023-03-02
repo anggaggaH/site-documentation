@@ -4,40 +4,21 @@ sidebar_position: 2
 
 # Sign Configuration
 
-Documents are **groups of pages** connected through:
+Please grab your ☕ and tight your seat before start this section.
 
-- a **sidebar**
-- **previous/next navigation**
-- **versioning**
+## Understanding scale
 
-## Create your first Doc
+<img src="/img/bds-sign/sign-configuration/understanding-scale.png" alt="701.1" width="" height="" />
 
-Create a Markdown file at `docs/hello.md`:
+as you can see above that **sign** have a certain height value, there is also value that defining space between element. Based on image above we can have a summary:
+- Total height of sign is **71**
+- Height of sign if they only have 1 line of position is **19**
+- Height of sign is **33** if they have multiple line of position
+- Default height for each element is **12**
+- Space between element from left to right is **4**
+- If **road-number** and **icon/symbol** placed side by side distance between them is decreased to **3**
 
-```md title="docs/hello.md"
-# Hello
-
-This is my **first Docusaurus document**!
-```
-
-A new document is now available at [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello).
-
-## Configure the Sidebar
-
-Docusaurus automatically **creates a sidebar** from the `docs` folder.
-
-Add metadata to customize the sidebar label and position:
-
-```md title="docs/hello.md" {1-4}
----
-sidebar_label: 'Hi!'
-sidebar_position: 3
----
-
-# Hello
-
-This is my **first Docusaurus document**!
-```
+remember that value is just number, we use it as base calculation value to generate final sum in different format *pixel and mm*.
 
 It is also possible to create your sidebar explicitly in `sidebars.js`:
 
