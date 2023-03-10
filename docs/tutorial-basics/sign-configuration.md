@@ -19,7 +19,9 @@ as you can see above that **sign** have a certain height value, there is also va
 - Space between element from left to right is **4**
 - If **road-number** and **icon/symbol** placed side by side distance between them is decreased to **3**
 
-remember that we use that value as base calculation to generate final sum in different format _pixel and mm_ based [scale](https://doc.anggahermawan.com/docs/tutorial-basics/overview#sign-scale) here. You can find the function that handle it below here.
+[Scale](https://doc.anggahermawan.com/docs/tutorial-basics/overview#sign-scale) is a variable that is used as the basis of calculations to determine width and height when the sign is in the editor and when exported. Available in two different format _pixel and mm_.
+
+You can find the function that handle it below here.
 
 ```jsx title="/src/components/Helper/getCurrentScale.ts"
 export function getCurrentScale() {
@@ -41,7 +43,7 @@ export function getNearest() {
 
 ### Width
 
-Width of plate should rounded to next 100mm
+Width of plate should rounded next to 100mm.
 
 ## Render
 This function will try to get current scale based on font size and distribute to `Sign File` that we create before
@@ -60,7 +62,7 @@ export function elementsToRender() {
 
   let sign: ISignRender;
   if (signSubTypeNum) {
-    sign = renderSignTemplate.sign560_1(newScale, lines, icons, bg, !!isDownload, !!isMeasure, this);
+    sign = renderSignTemplate.signSign_Type(newScale, lines, icons, bg, !!isDownload, !!isMeasure, this);
   }
 
   //...
@@ -74,6 +76,21 @@ export function elementsToRender() {
     baseHeight: totalBaseHeight,
     baseHeights: baseHeights,
     realScales: newScale,
-	});
+  });
 }
 ```
+
+## Example
+
+If we choose a `701.1 sign` based this [image](https://doc.anggahermawan.com/docs/tutorial-basics/overview#understanding-scale) with `font size = 175` then value that we defined for each sign should be:
+1. Height is `[33, 19, 19] * 25` = `1805mm`.
+- `33 * 25mm` = 825mm **Plate Height 825 is not exist** so it should be rounded next to **855**
+- `19 * 25mm` = 475mm
+- `19 * 25mm` = 475mm
+
+2. Width is dynamic value but it should be `highestWidth * 25mm` = `Xmm` the result should be rounded next to `100mm`.
+3. Default Scale is `94.48` if plate height is adjusted then we have new `scale of height`.
+
+## Miscellaneous
+1. All sign except 729 have extra 10mm width on left-right, for the calculation already implemented on each sign file.
+

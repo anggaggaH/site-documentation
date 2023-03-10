@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Export
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+You must install **CorelDRAW** so that you can see the export results.
 
 ## Create your first Post
 

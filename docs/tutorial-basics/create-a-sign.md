@@ -120,6 +120,16 @@ const signType = (
         let renderResult = _renderSvg({
             // returning value from this function on line 101
         })
+
+        // Setting up correct base height
+        let baseHeight = 19;
+		if (isMultipleLines) {
+			baseHeight = isAllText || isRnMultipleLines ? 31 : 33;
+		}
+
+		totalBaseHeight += baseHeight;
+		totalYfromHeights += baseHeight * scale[idxLine];
+		baseHeights.push(baseHeight);
     });
 
     // this function should return 5 variables
