@@ -39,4 +39,10 @@ You can easily analyze whether the `Sign` is correct or not by looking at the ed
 
 if the results of all stages above are correct you can try to export it by clicking `Export Pdf` in left sidebar, but before that you must install **CorelDRAW** so that you can see the export results.
 
-### Exported Sign
+### Preview Exported Sign
+
+<img src="/img/bds-sign/preview-and-testing/preview-exported-sign.png" alt="701.1" width="" height="" />
+
+This is example when we export sign and open it in CorelDRAW, to ensure that the sign has been successfully created and in accordance with the documentation, we can create a box by `multiply scale with width`. You can measure space between element both vertical/horizontal just make sure that you choose the right scale, scale also can't be seen in default list if somehow we rounded plate height to the next one.
+
+You can export again and measure until the sign is in accordance with the rules that have been made.
