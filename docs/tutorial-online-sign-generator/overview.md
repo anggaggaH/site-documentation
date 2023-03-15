@@ -15,7 +15,7 @@ Before you dive more deeper you have to understand rules that **BDS** defined to
 1. 500 sign [rules](https://drive.google.com/file/d/1SfsTP_9bAJaSp7Pd3DxioezUsMEb9GPe/view?usp=share_link)
 2. 700 sign [rules](https://drive.google.com/file/d/1dMss2_3l9MFvrcL6Fogul3ZxXRkohy4D/view?usp=share_link)
 3. Plate height [rules](https://drive.google.com/file/d/1lFjnX2NxB9bhyvs_xdD2jFMMHKnC4oIe/view?usp=share_link)
-4. Plate width always rounded next to 100mm
+4. Summary [flow](https://drive.google.com/file/d/19zO0TJAQINgf_1Gp_Zc9xmvNDNhUdPbZ/view?usp=sharing)
 
 ## Sign types
 
