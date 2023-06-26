@@ -19,7 +19,7 @@ as you can see above that **sign** have a certain height value, there is also va
 - Space between element from left to right is **4**
 - If **road-number** and **icon/symbol** placed side by side distance between them is decreased to **3**
 
-[Scale](https://doc.anggahermawan.com/docs/tutorial-online-sign-generator/overview#sign-scale) is a variable that is used as the basis of calculations to determine width and height when the sign is in the editor and when exported. Available in two different format _pixel and mm_.
+[Scale](https://doc.anggahermawan.com/docs/tutorial-online-sign-generator/overview#sign-scale) is a variable that is used as the basis of calculations to determine width and height when the sign is in the editor and when exported. Available in two different format _pixel and mm_. Remember that each rule that defined above is only work for Sub-sign 701.1, each sign is almost unique they will have their own rules for each element.
 
 You can find the function that handle it below here.
 
@@ -53,10 +53,18 @@ Height of plate should following rules as [documentation](https://doc.anggaherma
 
 ```jsx title="/src/components/Helper/getNearestPlate.ts"
 export function getNearest() {
-	return choosenPlate;
+  // ...
+  return choosenPlate;
 }
 ```
 
+But there are certain rules that defined when plate height doesn't exist it should be rounded to previous plate height or force down into specified height
+```jsx title="/src/components/Helper/excludedHeight.ts"
+export default function excludedHeight(fs: number, bh: number, type: string, h: number, isPlanPlate: boolean) {
+  // ...
+  return selectedHeight;
+}
+```
 ### Width
 
 Width of plate should rounded next to 100mm.

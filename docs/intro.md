@@ -45,9 +45,9 @@ Run the development server:
 
 ```bash
 cd your-project-source
-npm run start
+npm start
 ```
 
 The `cd` command changes the directory you're working with. In order to work with your newly created Project site, you'll need to navigate the terminal there.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+The `npm start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
