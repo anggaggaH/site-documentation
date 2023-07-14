@@ -20,13 +20,19 @@ sidebar_position: 8
 <details>
   <summary>The sign is not displayed correctly</summary>
 
-   1. Either we still not displayed the feature or they are already exist but the value is not setup correctly.
+   Either we still not displayed the feature or they are already exist but the value is not setup correctly.
 
 </details>
 <details>
   <summary>Problem with export sign, sign not exported or it is exported but with wrong data</summary>
 
-   1. This happen when sign is not setup correctly, old sign that comes from archive usually experienced this. The solution is to re-save the sign.
+   This happen when sign is not setup correctly, old sign that comes from archive usually experienced this. The solution is to re-save the sign.
+
+</details>
+<details>
+  <summary>Order of attribute automatically changes when we change one of arrow, background, distance and road-number</summary>
+
+   All of those items are sorted automatically, you can find that configuration on the setting page.
 
 </details>
 
