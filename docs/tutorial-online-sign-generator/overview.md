@@ -79,3 +79,29 @@ Scale is used to make sure that Sign **Height**, **Width**, **Space Between Elem
 - *px* is default measurement variable to display sign only on editor/website also act as multiplication variable that use to generate real size of sign.
 - *mm* is default measurement variable to display sign on report and CorelDraw.
 - *Editor* is base scale variable that use to calculate everything on editor/website.
+
+## Editor Layout
+<img src="/img/bds-sign/overview/overview-editor.png" alt="angga editor" />
+
+#### Layout:
+<ol type="a">
+ <li>Header</li>
+ <li>Sidebar</li>
+ <li>Main Editor</li>
+ <li>Menu Option</li>
+</ol>
+
+The component's Layout is the core concept of this app, to perform well they share state through context and redux.
+
+#### Section:
+<ol type="1">
+ <li>Project List</li>
+ <li>Project Signs</li>
+ <li>Action related to sign (Save, Update, Delete, Export)</li>
+ <li>Sign with measurement</li>
+ We count each sign vertically, based above image we have 1 type of signs that having 3 pieces of sign.
+ <li>Right click action inside editor</li>
+ <li>Project sign global variable </li>
+ <li>Sign attribute</li>
+ Each sign attribute is unique based on the type of sign, they are sorted automatically based on the predefined rule on the settings page.
+</ol>

@@ -10,7 +10,7 @@ Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://
 
 ## What's next?
 
-- Change default table implementation
-- Updating React Version
+- Change default table implementation using [tanstack](https://tanstack.com/table/v8)
+- Updating React and Typescript Version
 - Refactoring some function
 - Using Signals as main state management
