@@ -17,7 +17,7 @@ Before you dive more deeper you have to understand rules that **BDS** defined to
 3. Plate height [rules](https://drive.google.com/file/d/1lFjnX2NxB9bhyvs_xdD2jFMMHKnC4oIe/view?usp=sharing)
 4. Sort Element [rules](https://drive.google.com/file/d/1wc5aDt4rWef7K3K-UNxKYW6HkubEl2XL/view?usp=sharing)
 5. Road Number Font Rules [rules](https://docs.google.com/spreadsheets/d/1FRnMWpN7o_pbzfHaNGKWJLgg1ET2bGG7/edit?usp=drive_link&ouid=116287574286590490852&rtpof=true&sd=true)
-6. Summary [flow](https://drive.google.com/file/d/19zO0TJAQINgf_1Gp_Zc9xmvNDNhUdPbZ/view?usp=sharing)
+6. Summary (Will invite to project flow) [flow](https://drive.google.com/file/d/19zO0TJAQINgf_1Gp_Zc9xmvNDNhUdPbZ/view?usp=sharing)
 7. Example [sign](https://commons.wikimedia.org/w/index.php?search=norway+road+sign&title=Special:MediaSearch&go=Go&type=image)
 
 ## Sign types
