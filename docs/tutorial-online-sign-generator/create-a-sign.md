@@ -28,7 +28,7 @@ You can continue with [Create Sub-Sign Type](https://api2.bdsamferdsel.no/sign_s
 _you can comeback to fill **svg_file** and **svg_string** when you successfully generated the sign_.
 For the **svg_json** you should follow predefined format, below is example for _701.1_ sign:
 
-<img src="/img/bds-sign/create-a-sign/sign-preview.png" alt="701.1" width="" height="" />
+<img src="/img/bds-sign/create-a-sign/sign-preview.svg" alt="701.1" width="" height="" />
 
 
 ```

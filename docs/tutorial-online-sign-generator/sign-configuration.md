@@ -45,6 +45,9 @@ Until this documentation was published only sign ``713`` and ``729`` that using 
 1. ``729`` have more simple configuration, it has different width for each font size, though that it only contains multiple path to create triangle from two perspective.
 2. ``713`` have more complexity, it is because the triangle should have rounded edge in the middle of triangle point. Built from single complicated path and transformed into to some perspective view.
 
+### Dynamic Icon/Sign
+We treat icons like signs which have dynamic values. This element is combined with other signs, combining 3 rules that comes from ``Text``,``Icon`` and ``Road Number``.
+
 ## Sign Plate
 
 ### Height

@@ -17,12 +17,12 @@ Before you dive more deeper you have to understand rules that **BDS** defined to
 3. Plate height [rules](https://drive.google.com/file/d/1lFjnX2NxB9bhyvs_xdD2jFMMHKnC4oIe/view?usp=sharing)
 4. Sort Element [rules](https://drive.google.com/file/d/1wc5aDt4rWef7K3K-UNxKYW6HkubEl2XL/view?usp=sharing)
 5. Road Number Font Rules [rules](https://docs.google.com/spreadsheets/d/1FRnMWpN7o_pbzfHaNGKWJLgg1ET2bGG7/edit?usp=drive_link&ouid=116287574286590490852&rtpof=true&sd=true)
-6. Summary (Will invite to project flow) [flow](https://drive.google.com/file/d/19zO0TJAQINgf_1Gp_Zc9xmvNDNhUdPbZ/view?usp=sharing)
+6. Summary [flow](https://miro.com/welcomeonboard/aUc0RTltcEJrdzdVMTBMT2UwZjVmREdNWTI1RnpRT2lDQ1U1SDBvWHBuZmc1aHM2eEh0RUMzbzF0MUlmVHhURnwzNDU4NzY0NTY0ODU4ODkzNzg0fDI=?share_link_id=19855114534)
 7. Example [sign](https://commons.wikimedia.org/w/index.php?search=norway+road+sign&title=Special:MediaSearch&go=Go&type=image)
 
 ## Sign types
 
-| Arrow | Background | CrossNumber |
+| Arrow | Background | Cross Number |
 |:-----:|:----------:|:-----------:|
 | <img src="/img/bds-sign/sign-type/arrow.png" alt="Arrow" width="200" height="200" /> | <img src="/img/bds-sign/sign-type/background.png" alt="Background" width="200" height="200" /> | <img src="/img/bds-sign/sign-type/cross-number.png" alt="CrossNumber" width="200" height="200" /> |
 
@@ -33,6 +33,10 @@ Before you dive more deeper you have to understand rules that **BDS** defined to
 | Road Number | Text | Triangle Edge |
 :-----------:|:----:|:-------------:|
 | <img src="/img/bds-sign/sign-type/road-number.png" alt="Road Number" width="200" height="200" /> | <img src="/img/bds-sign/sign-type/text.png" alt="Text" width="200" height="200" /> | <img src="/img/bds-sign/sign-type/triangle-edge.png" alt="Triangle Edge" width="200" height="200" /> |
+
+| Dynamic Icon / Sign |
+:-----------:|
+| <a href="https://commons.wikimedia.org/wiki/Road_signs_of_Norway" target="_blank" rel="noopener"><img src="/img/bds-sign/sign-type/dynamic-icon.svg" alt="Dynamic Icon / Sign" width="200" height="200" /></a> |
 
 ## Sign status
 1. Kladd (*draft*)
