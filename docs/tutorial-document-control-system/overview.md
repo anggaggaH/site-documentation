@@ -3,17 +3,21 @@ sidebar_position: 0
 ---
 
 # Overview
+
 Document Control System
+
 - PHP Version : 7.2 or should less than 7.3
 - Codeigniter Version: 3.1.9
 - Cloud : [Azure Storage](https://github.com/Azure/azure-sdk-for-php)
 - Azure Storage Explorer : [Install](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)
 
 ## Dashboard
+
 <img src="/img/docs/overview/1. dashboard.png" alt="dashboard" />
 Description: Showing all product categories
 
 ## Header
+
 <img src="/img/docs/overview/2. header.png" alt="header" />
 Description:
 <ol type="1">
@@ -33,16 +37,18 @@ note:
 </ol>
 
 ## Menu
+
 <img src="/img/docs/overview/3. menu.png" alt="menu" />
 
-note: * some features still have issues after migrating to azure storage
+note: \* some features still have issues after migrating to azure storage
 
 ## Home
+
 <img src="/img/docs/overview/4. home.png" alt="home" />
 Description: Showing data based on the category that we choose from the dashboard
 
-
 ## Create-Update Project
+
 <img src="/img/docs/overview/5. create-update.png" alt="create-update" />
 Description:
 <ol type="1">
@@ -59,7 +65,16 @@ Description:
 </ol>
 
 ## Project Detail
+
 <img src="/img/docs/overview/6. project detail.png" alt="project detail" />
 note: * need to refactor the function that shows the relations
 
+## Azure Php SDK
 
+<ol type="1">
+    <li>Microsoft Azure Storage Explorer <a href="https://azure.microsoft.com/id-id/products/category/storage/">Download</a></li>
+    <li><a href="https://github.com/Azure/azure-storage-php">PHP Azure SDK</a> Documentation</li>
+    <li><a href="https://github.com/Azure/azure-storage-php/blob/master/samples/BlobSamples.php">Blob samples</a> and how to use it</li>
+    <li>Curl Request <a href="https://learn.microsoft.com/en-us/rest/api/storageservices/put-blob?tabs=shared-key">(PUT Blob)</a> with <a href="https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-with-shared-key">Shared Access Key</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/rest/api/storageservices/authorize-requests-to-azure-storage">Authorize</a> request to Azure Storage</li>
+</ol>
