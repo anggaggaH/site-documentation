@@ -15,6 +15,9 @@ Document Control System
 
 <img src="/img/docs/overview/1. dashboard.png" alt="dashboard" />
 Description: Showing all product categories
+<br/>
+<b>Tb: categorycomponent</b>
+
 
 ## Header
 
@@ -42,10 +45,25 @@ note:
 
 note: \* some features still have issues after migrating to azure storage
 
+<ol type="1">
+    <li>List of users <b>Tb: usertable_doc</b></li>
+    <li>List of temporary users <b>Tb: tempuser</b></li>
+    <li>List of project code/type <b>Tb: productprefix</b></li>
+    <li>List of project categories <b>Tb: categorycomponent</b></li>
+    <li>List of project attachments <b>Tb: component-productprefix-usertable_doc-datasheet</b></li>
+    <li>Attachment download log <b>Tb: downloadlog</b></li>
+    <li>List of project with status <b>Tb: component-productprefix-usertable_doc</b></li>
+    <li>List of reference <b>Tb: reference_type</b></li>
+</ol>
+
 ## Home
 
 <img src="/img/docs/overview/4. home.png" alt="home" />
 Description: Showing data based on the category that we choose from the dashboard
+<br/>
+<br/>
+<b>Query: component - productprefix - usertable_doc - referencerelation - reference_type - categoryrelation</b>
+
 
 ## Create-Update Project
 
