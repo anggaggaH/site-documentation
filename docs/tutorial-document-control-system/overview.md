@@ -79,6 +79,7 @@ Description:
  c. and it will be stored on our database after upload to storage is success
 
  <li>File with <b>Private</b> will be stored in the Private Container and public files will be stored in the public container</li>
+ <li>File with privilege can be seen only by the user with that selected privilege</li>
  <li>On edit mode changing private-public will move file from source to target container</li>
 </ol>
 
@@ -86,6 +87,14 @@ Description:
 
 <img src="/img/docs/overview/6. project detail.png" alt="project detail" />
 note: * need to refactor the function that shows the relations
+
+<br/>
+Description:
+<ol type="1">
+ <li>Showing the latest version for each project that comes on this tree</li>
+ <li>ASC shows as long as if there are child project </li>
+ <li>DESC shows as long as the current project is part of another child</li>
+</ol>
 
 ## Azure Php SDK
 
